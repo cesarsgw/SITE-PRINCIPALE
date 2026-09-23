@@ -598,6 +598,16 @@ html{ scroll-behavior: auto; }
   color: var(--steel);
   margin-top: 3px;
 }
+#page-home .info-whatsapp{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+#page-home .info-whatsapp:hover,
+#page-home .info-whatsapp:focus-visible{ border-color: #25D366; transform: translateY(-2px); }
+#page-home .info-whatsapp .wa-icon{ width: 30px; height: 30px; color: #25D366; flex-shrink: 0; }
+#page-home .info-whatsapp .info-sub{ color: var(--signal); font-weight: 600; }
 #page-home footer{
   background: var(--ink);
   color: var(--steel-soft);
