@@ -268,67 +268,49 @@
   <div class="wrap">
     <div class="section-head">
       <h2>Governance led by experience.</h2>
-      <p class="section-sub">A team that combines strategic leadership, certified technical expertise (PASSI, ANSSI, ISO 27001) and regulatory advisory.</p>
     </div>
 
-    <div class="team-grid">
-      <div class="team-card">
-        <div class="team-photo"><img id="imgTeamToso" src="../images/team-cristiano-toso.jpg" width="480" height="600" alt="Cristiano Toso" loading="lazy"></div>
-        <div class="team-info">
+    <div class="team-list">
+      <div class="team-row">
+        <div class="team-avatar"><img id="imgTeamToso" src="../images/team-cristiano-toso.jpg" width="480" height="600" alt="Cristiano Toso" loading="lazy"></div>
+        <div class="team-id">
           <span class="team-role">PRESIDENT</span>
           <h3>Cristiano Toso</h3>
-          <p>President — MGC FR. Sets the group's long-term strategy and governance. Security expert, open-source intelligence and data-driven solutions.</p>
         </div>
+        <p>President — MGC FR. Sets the group's long-term strategy and governance. Security expert, open-source intelligence and data-driven solutions.</p>
       </div>
-      <div class="team-card">
-        <div class="team-photo"><img id="imgTeamBroc" src="../images/team-arthur-broc.jpg" width="480" height="600" alt="Arthur Broc" loading="lazy"></div>
-        <div class="team-info">
+      <div class="team-row">
+        <div class="team-avatar"><img id="imgTeamBroc" src="../images/team-arthur-broc.jpg" width="480" height="600" alt="Arthur Broc" loading="lazy"></div>
+        <div class="team-id">
           <span class="team-role">MANAGING DIRECTOR</span>
           <h3>Arthur Broc</h3>
-          <p>Managing Director. Leads operational execution in France: ISO/PASSI certifications, projects and risk management. Over 20 years of experience, including leadership roles at Microsoft, Fujitsu and within the Thales ecosystem.</p>
         </div>
+        <p>Managing Director. Leads operational execution in France: ISO/PASSI certifications, projects and risk management. Over 20 years of experience, including leadership roles at Microsoft, Fujitsu and within the Thales ecosystem.</p>
       </div>
-      <div class="team-card">
-        <div class="team-photo"><img id="imgTeamOueidat" src="../images/team-mounif-oueidat.jpg" width="480" height="600" alt="Mounif Oueidat" loading="lazy"></div>
-        <div class="team-info">
+      <div class="team-row">
+        <div class="team-avatar"><img id="imgTeamOueidat" src="../images/team-mounif-oueidat.jpg" width="480" height="600" alt="Mounif Oueidat" loading="lazy"></div>
+        <div class="team-id">
           <span class="team-role">STRATEGIC COMMITTEE</span>
           <h3>Mounif Oueidat</h3>
-          <p>Head of the Strategic Committee, in charge of operational execution abroad. Trilingual lawyer and engineer, specialized in international dispute resolution.</p>
         </div>
+        <p>Head of the Strategic Committee, in charge of operational execution abroad. Trilingual lawyer and engineer, specialized in international dispute resolution.</p>
       </div>
-      <div class="team-card">
-        <div class="team-photo"><img id="imgTeamLethiec" src="../images/team-yves-lethiec.jpg" width="480" height="600" alt="Yves LeThiec" loading="lazy"></div>
-        <div class="team-info">
+      <div class="team-row">
+        <div class="team-avatar"><img id="imgTeamLethiec" src="../images/team-yves-lethiec.jpg" width="480" height="600" alt="Yves LeThiec" loading="lazy"></div>
+        <div class="team-id">
           <span class="team-role">ADVISOR</span>
           <h3>Yves LeThiec</h3>
-          <p>Advisor. Former Deputy Assistant Director at ANSSI, Télécom ParisTech engineer. Recognized expert in cyber defense and critical infrastructure security.</p>
         </div>
+        <p>Advisor. Former Deputy Assistant Director at ANSSI, Télécom ParisTech engineer. Recognized expert in cyber defense and critical infrastructure security.</p>
       </div>
-      <div class="team-card">
-        <div class="team-photo"><img id="imgTeamGoldenstein" src="../images/team-sophia-goldenstein.jpg" width="480" height="600" alt="Sophia Goldenstein" loading="lazy"></div>
-        <div class="team-info">
+      <div class="team-row">
+        <div class="team-avatar"><img id="imgTeamGoldenstein" src="../images/team-sophia-goldenstein.jpg" width="480" height="600" alt="Sophia Goldenstein" loading="lazy"></div>
+        <div class="team-id">
           <span class="team-role">ADVISOR</span>
           <h3>Sophia Goldenstein</h3>
-          <p>Advisor. Brings an independent perspective on governance, reputation management, crisis communication and international relations.</p>
         </div>
+        <p>Advisor. Brings an independent perspective on governance, reputation management, crisis communication and international relations.</p>
       </div>
-      <div class="team-card">
-        <div class="team-photo"><img id="imgTeamOufrani" src="../images/team-jean-yves-oufrani.jpg" width="480" height="600" alt="Jean Yves Oufrani" loading="lazy"></div>
-        <div class="team-info">
-          <span class="team-role">CISO — PASSI AUDITOR</span>
-          <h3>Jean Yves Oufrani</h3>
-          <p>CISO and PASSI auditor, ISO 27001 Lead Implementer &amp; Auditor. 25 years of experience in information systems security with critical organizations (OIV operators, banks, public sector).</p>
-        </div>
-      </div>
-      <div class="team-card">
-        <div class="team-photo"><img id="imgTeamSimon" src="../images/team-fabrice-simon.jpg" width="480" height="480" alt="Fabrice Simon" loading="lazy"></div>
-        <div class="team-info">
-          <span class="team-role">CISO — PASSI AUDITOR</span>
-          <h3>Fabrice Simon</h3>
-          <p>CISO and PASSI auditor, ISO 27001 Lead Implementer. Leads organizational and physical audits as well as certification maintenance with ANSSI.</p>
-        </div>
-      </div>
-      <div class="team-card" aria-hidden="true"></div>
     </div>
 
     <div class="gov-footer">
@@ -854,7 +836,7 @@
     onScroll();
 
     if ('IntersectionObserver' in window){
-      const revealTargets = document.querySelectorAll('.service-card, .method-step, .team-card, .guarantee-list li');
+      const revealTargets = document.querySelectorAll('.service-card, .method-step, .team-row, .guarantee-list li');
       revealTargets.forEach(el => el.classList.add('reveal'));
       const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

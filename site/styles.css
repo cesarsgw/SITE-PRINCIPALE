@@ -435,51 +435,52 @@ html{ scroll-behavior: auto; }
 @media (max-width: 560px){
 #page-home #ia .guarantee-list{ grid-template-columns: 1fr; }
 }
-#page-home .team-grid{
+#page-home .team-list{ border-top: 1px solid var(--line); }
+#page-home .team-row{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
+  grid-template-columns: 76px minmax(180px, 260px) 1fr;
+  gap: 28px;
+  align-items: center;
+  padding: 22px 8px;
+  border-bottom: 1px solid var(--line);
+  transition: background 0.2s ease;
 }
-@media (max-width: 900px){
-#page-home .team-grid{ grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 560px){
-#page-home .team-grid{ grid-template-columns: 1fr; }
-}
-#page-home .team-card{
-  background: var(--paper);
-}
-#page-home .team-photo{
-  position: relative;
-  aspect-ratio: 4/5;
-  background: var(--ink-2);
+#page-home .team-row:hover{ background: var(--paper-2); }
+#page-home .team-avatar{
+  width: 76px;
+  height: 76px;
   overflow: hidden;
+  background: var(--ink-2);
+  border-radius: var(--radius);
 }
-#page-home .team-photo img{
+#page-home .team-avatar img{
   width: 100%; height: 100%;
   object-fit: cover;
-  display: block;
+  object-position: 50% 18%;
 }
-#page-home .team-info{ padding: 20px; }
 #page-home .team-role{
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--signal);
   letter-spacing: 0.02em;
 }
-#page-home .team-info h3{
-  font-size: 17px;
+#page-home .team-id h3{
+  font-size: 18px;
   font-weight: 700;
-  margin: 8px 0 8px;
+  margin-top: 4px;
 }
-#page-home .team-info p{
-  font-size: 13.5px;
+#page-home .team-row p{
+  font-size: 14px;
   color: var(--steel);
+  max-width: 70ch;
+}
+@media (max-width: 760px){
+#page-home .team-row{ grid-template-columns: 64px 1fr; gap: 6px 16px; padding: 18px 0; }
+#page-home .team-avatar{ width: 64px; height: 64px; grid-row: span 2; align-self: start; }
+#page-home .team-row p{ font-size: 13.5px; }
 }
 #page-home .gov-footer{
-  margin-top: 1px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1px;
