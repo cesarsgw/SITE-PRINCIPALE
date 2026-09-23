@@ -1,0 +1,23 @@
+# Configuration Apache (OVH, o2switch, Hostinger…). Ignoré par les autres hébergeurs
+# (Netlify, Vercel, Cloudflare Pages, GitHub Pages compressent déjà automatiquement).
+
+# Page d'accueil : / → MGC_page_principale.html, /en/ → home.html
+DirectoryIndex MGC_page_principale.html home.html index.html
+ErrorDocument 404 /404.html
+Options -Indexes
+
+# Compression des fichiers texte (Brotli si disponible, sinon Gzip)
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain text/xml application/javascript application/json application/xml image/svg+xml image/x-icon
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json application/xml image/svg+xml image/x-icon
+</IfModule>
+
+# Cache navigateur des images (les pages, CSS et JS restent toujours à jour)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 month"
+</IfModule>
