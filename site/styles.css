@@ -759,6 +759,116 @@ html{ scroll-behavior: auto; }
 #page-home .theme-toggle .icon-sun{ display: none; }
 #page-home .lang-link{ color: var(--white); font-family: var(--font-mono); font-size: 13px; text-decoration: none; border: 1px solid var(--line-dark); border-radius: var(--radius); padding: 9px 10px; transition: border-color 0.15s ease; }
 #page-home .lang-link:hover{ border-color: var(--steel-soft); }
+/* Compteur « Menaces actives · FR » (header) — données : threat-counter.js */
+#page-home .threat-counter{ position: relative; }
+#page-home .threat-counter .tc-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px 5px 8px;
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius);
+  color: var(--white);
+  transition: border-color 0.15s ease;
+}
+#page-home .threat-counter .tc-link:hover,
+#page-home .threat-counter .tc-link:focus-visible{ border-color: var(--steel-soft); }
+#page-home .tc-icon{ width: 17px; height: 17px; color: #7FA3E6; flex-shrink: 0; }
+#page-home .tc-body{ display: flex; flex-direction: column; line-height: 1.15; }
+#page-home .tc-label{
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--steel-soft);
+  white-space: nowrap;
+}
+#page-home .tc-value{
+  font-size: 14px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--white);
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+#page-home .threat-counter.is-unavailable .tc-value{ font-size: 11.5px; font-weight: 500; color: var(--steel-soft); }
+#page-home .threat-counter.is-loading .tc-value{ color: var(--steel-soft); }
+#page-home .threat-counter.tc-bump .tc-value{ animation: tc-flash 1.2s ease; }
+@keyframes tc-flash{
+  0%{ color: var(--white); }
+  25%{ color: #A9C1F0; text-shadow: 0 0 10px rgba(127,163,230,0.6); }
+  100%{ color: var(--white); text-shadow: none; }
+}
+#page-home .tc-live{
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 6px;
+  color: #FF6B78;
+}
+#page-home .tc-live[hidden]{ display: none; }
+#page-home .tc-live::before{
+  content: "";
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--brand-red);
+  animation: pulse 2.4s ease-out infinite;
+}
+#page-home .tc-tip{
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  width: 290px;
+  transform: translate(-50%, -4px);
+  padding: 12px 14px;
+  background: var(--ink);
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+  color: var(--steel-soft);
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+  z-index: 60;
+}
+#page-home .threat-counter:hover .tc-tip,
+#page-home .threat-counter:focus-within .tc-tip{ opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+#page-home .tc-meta{ display: block; margin-top: 6px; font-family: var(--font-mono); font-size: 11px; color: #A9C1F0; }
+#page-home .tc-meta:empty{ display: none; }
+@media (min-width: 861px) and (max-width: 1180px){
+#page-home .nav-links{ gap: 16px; }
+#page-home .nav-links .btn-primary{ padding: 11px 16px; white-space: nowrap; }
+#page-home .nav-cta{ gap: 10px; }
+}
+@media (min-width: 861px) and (max-width: 1000px){
+#page-home .nav-links{ gap: 12px; }
+#page-home .nav-links a{ font-size: 13px; }
+#page-home .tc-icon{ display: none; }
+}
+@media (max-width: 860px){
+#page-home .threat-counter{ width: 100%; max-width: 420px; }
+#page-home .tc-tip{
+    position: static;
+    width: auto;
+    margin-top: 8px;
+    padding: 0;
+    background: none;
+    border: 0;
+    box-shadow: none;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    font-size: 11.5px;
+  }
+#page-home .threat-counter:hover .tc-tip,
+#page-home .threat-counter:focus-within .tc-tip{ transform: none; }
+}
+@media (prefers-reduced-motion: reduce){
+#page-home .threat-counter.tc-bump .tc-value{ animation: none; }
+}
 .subpage{ margin:0; background:var(--paper); color:var(--ink-text); font-family:var(--font-display); line-height:1.6; font-size:16px; }
 .subpage header{ background:var(--ink); padding:22px 0; position:sticky; top:0; z-index:50; overflow:hidden; transition:box-shadow 0.25s ease; }
 .subpage .flag-wave{ position:absolute; inset:0; width:100%; height:100%; opacity:0.15; pointer-events:none; }

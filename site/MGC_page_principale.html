@@ -89,6 +89,16 @@
       <a href="#equipe">Équipe</a>
       <a href="#ia">IA</a>
       <a href="#confidentialite">Confidentialité</a>
+      <div class="threat-counter is-loading" data-threat-counter data-endpoint="https://raw.githubusercontent.com/cesarsgw/SITE-PRINCIPALE/data/cyber-counter.json">
+        <a class="tc-link" href="https://urlhaus.abuse.ch/" target="_blank" rel="noopener" aria-describedby="threatCounterTip">
+          <svg class="tc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5 19.5 5.5V11c0 4.6-3.1 8.4-7.5 10-4.4-1.6-7.5-5.4-7.5-10V5.5Z"></path><path d="M12 8v4.5"></path><circle cx="12" cy="15.8" r="0.6" fill="currentColor"></circle></svg>
+          <span class="tc-body">
+            <span class="tc-label">Menaces actives · FR<span class="tc-live" hidden>en direct</span></span>
+            <span class="tc-value">—</span>
+          </span>
+        </a>
+        <div class="tc-tip" id="threatCounterTip" role="tooltip">URL de distribution de malware actives, hébergées sur des serveurs situés en France. Ce n'est pas un nombre d'attaques. Source : abuse.ch URLhaus (données CC0), actualisée environ toutes les 15 min.<span class="tc-meta"></span></div>
+      </div>
       <a href="#contact" class="btn btn-primary">Nous contacter</a>
     </nav>
     <div class="nav-cta">
@@ -855,5 +865,7 @@
     }
   })();
 </script>
+
+<script src="threat-counter.js" defer></script>
 
 </body></html>

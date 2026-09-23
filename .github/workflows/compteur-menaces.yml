@@ -1,0 +1,44 @@
+# Met à jour le compteur « Menaces actives · FR » affiché dans le header du site.
+# Source : abuse.ch URLhaus (flux pays FR). Résultat publié dans cyber-counter.json
+# sur la branche « data » (un seul commit, réécrit à chaque passage).
+# Prérequis : secret de dépôt URLHAUS_AUTH_KEY (clé gratuite sur https://auth.abuse.ch/).
+name: Compteur menaces (URLhaus FR)
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: compteur-menaces
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Calcul du compteur
+        env:
+          URLHAUS_AUTH_KEY: ${{ secrets.URLHAUS_AUTH_KEY }}
+        run: |
+          mkdir -p out
+          python3 .github/scripts/urlhaus_fr_counter.py > out/cyber-counter.json
+          cat out/cyber-counter.json
+
+      - name: Publication sur la branche data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd out
+          git init -q -b data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cyber-counter.json
+          git commit -q -m "Compteur menaces : mise à jour"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" data
