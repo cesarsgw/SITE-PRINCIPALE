@@ -487,6 +487,35 @@
   </div>
 </section>
 
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter" id="newsletter" aria-labelledby="newsletterTitle">
+  <div class="wrap newsletter-inner">
+    <div class="newsletter-copy">
+      <span class="newsletter-eyebrow"><span class="pulse" aria-hidden="true"></span>Newsletter MGC</span>
+      <h2 id="newsletterTitle">Restez informé des menaces cyber</h2>
+      <p>Recevez nos actualités, alertes et analyses cybersécurité directement par email.</p>
+    </div>
+    <!-- MODIFIER : data-endpoint = URL de l'API newsletter (Cloudflare Worker), voir NEWSLETTER-BREVO.md -->
+    <form class="newsletter-form" id="newsletterForm" data-endpoint="" novalidate>
+      <div class="newsletter-row">
+        <label class="sr-only" for="newsletterEmail">Votre adresse email</label>
+        <input type="email" id="newsletterEmail" name="email" placeholder="Votre adresse email" autocomplete="email" maxlength="254" required>
+        <button type="submit" class="btn btn-primary" id="newsletterBtn">S'inscrire</button>
+      </div>
+      <label class="newsletter-consent">
+        <input type="checkbox" id="newsletterConsent" name="consent" required>
+        <span>J'accepte de recevoir la newsletter de MGC par email.</span>
+      </label>
+      <div class="newsletter-hp" aria-hidden="true">
+        <label for="newsletterWebsite">Ne pas remplir ce champ</label>
+        <input type="text" id="newsletterWebsite" name="website" tabindex="-1" autocomplete="off">
+      </div>
+      <p class="newsletter-legal">En vous inscrivant, vous acceptez de recevoir les communications de MGC. Vous pouvez vous désinscrire à tout moment. <a href="mentions_legales.html#s3">Politique de confidentialité</a></p>
+      <p class="newsletter-status" id="newsletterStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
 <!-- ===== PIED DE PAGE ===== -->
 <footer>
   <div class="wrap">
@@ -867,5 +896,6 @@
 </script>
 
 <script src="threat-counter.js" defer></script>
+<script src="newsletter.js" defer></script>
 
 </body></html>

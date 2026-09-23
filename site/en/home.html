@@ -484,6 +484,35 @@
   </div>
 </section>
 
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter" id="newsletter" aria-labelledby="newsletterTitle">
+  <div class="wrap newsletter-inner">
+    <div class="newsletter-copy">
+      <span class="newsletter-eyebrow"><span class="pulse" aria-hidden="true"></span>MGC Newsletter</span>
+      <h2 id="newsletterTitle">Stay informed about cyber threats</h2>
+      <p>Get our news, alerts and cybersecurity analyses straight to your inbox.</p>
+    </div>
+    <!-- EDIT: data-endpoint = newsletter API URL (Cloudflare Worker), see NEWSLETTER-BREVO.md -->
+    <form class="newsletter-form" id="newsletterForm" data-endpoint="" novalidate>
+      <div class="newsletter-row">
+        <label class="sr-only" for="newsletterEmail">Your email address</label>
+        <input type="email" id="newsletterEmail" name="email" placeholder="Your email address" autocomplete="email" maxlength="254" required>
+        <button type="submit" class="btn btn-primary" id="newsletterBtn">Subscribe</button>
+      </div>
+      <label class="newsletter-consent">
+        <input type="checkbox" id="newsletterConsent" name="consent" required>
+        <span>I agree to receive MGC's newsletter by email.</span>
+      </label>
+      <div class="newsletter-hp" aria-hidden="true">
+        <label for="newsletterWebsite">Leave this field empty</label>
+        <input type="text" id="newsletterWebsite" name="website" tabindex="-1" autocomplete="off">
+      </div>
+      <p class="newsletter-legal">By subscribing, you agree to receive communications from MGC. You can unsubscribe at any time. <a href="legal-notice.html#s3">Privacy policy</a></p>
+      <p class="newsletter-status" id="newsletterStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="wrap">
@@ -861,5 +890,6 @@
   })();
 </script>
 <script src="../threat-counter.js" defer></script>
+<script src="../newsletter.js" defer></script>
 
 </body></html>
