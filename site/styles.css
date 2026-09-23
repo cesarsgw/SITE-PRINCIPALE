@@ -598,6 +598,7 @@ html{ scroll-behavior: auto; }
   color: var(--steel);
   margin-top: 3px;
 }
+#page-home .info-block .info-value a:hover{ color: var(--signal); }
 #page-home .info-whatsapp{
   display: flex;
   align-items: center;
