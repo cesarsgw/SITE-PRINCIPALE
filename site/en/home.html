@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<script>
+(function(){
+  try {
+    var stored = localStorage.getItem('mgc_theme');
+    var theme = stored || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  } catch (e) {}
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MGC — Cybersecurity, Video Protection &amp; Physical Security | Paris</title>
+<meta name="description" content="MGC helps companies protect their systems, sites and data, with an integrated approach to cybersecurity and physical security. Based in Paris, Nice and Monaco.">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://www.mgc-paris.fr/en/">
+<link rel="alternate" hreflang="fr" href="https://www.mgc-paris.fr/MGC_page_principale.html">
+<link rel="alternate" hreflang="en" href="https://www.mgc-paris.fr/en/">
+<link rel="alternate" hreflang="x-default" href="https://www.mgc-paris.fr/MGC_page_principale.html">
+
+<!-- Social sharing (Facebook, LinkedIn...) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MGC">
+<meta property="og:title" content="MGC — Cybersecurity, Video Protection &amp; Physical Security">
+<meta property="og:description" content="MGC helps companies protect their systems, sites and data, with an integrated approach to cybersecurity and physical security. Based in Paris, Nice and Monaco.">
+<meta property="og:url" content="https://www.mgc-paris.fr/en/">
+<meta property="og:image" content="https://www.mgc-paris.fr/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MGC — Cybersecurity, Video Protection &amp; Physical Security">
+<meta name="twitter:description" content="MGC helps companies protect their systems, sites and data, with an integrated approach to cybersecurity and physical security. Based in Paris, Nice and Monaco.">
+<meta name="twitter:image" content="https://www.mgc-paris.fr/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="256x256" href="../images/apple-touch-icon.png">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "MGC FR",
+  "legalName": "MGC FR",
+  "description": "Cybersecurity, video protection, physical security and access control, image analysis and sensitive project management.",
+  "url": "https://www.mgc-paris.fr/en/",
+  "inLanguage": "en",
+  "areaServed": [
+    { "@type": "City", "name": "Paris" },
+    { "@type": "City", "name": "Nice" },
+    { "@type": "City", "name": "Monaco" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "69 Boulevard Haussmann",
+    "postalCode": "75008",
+    "addressLocality": "Paris",
+    "addressCountry": "FR"
+  },
+  "priceRange": "€€€",
+  "sameAs": []
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body id="page-home">
+
+
+
+
+<!-- ===== HEADER / NAVIGATION ===== -->
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo">
+      <span class="logo-badge"><img class="logo-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MjAgNTAzIiB3aWR0aD0iNjIwIiBoZWlnaHQ9IjUwMyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9Im1nY0JsdWUiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMkU2M0M5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTUlIiBzdG9wLWNvbG9yPSIjMTc0NkEyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBDMkE2MyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibWdjUmVkIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0ZGM0IzMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iI0QzMTQwRiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2RTA4MDYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDx0ZXh0IHg9IjMxMCIgeT0iMTUyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjEzMiIgbGV0dGVyLXNwYWNpbmc9IjIiIGZpbGw9IiNFMjAwMUEiPk1HQzwvdGV4dD4KICA8cmVjdCB4PSIxNDgiIHk9IjE4NSIgd2lkdGg9IjExNiIgaGVpZ2h0PSIyMDUiIGZpbGw9InVybCgjbWdjQmx1ZSkiLz4KICA8cmVjdCB4PSIzNTIiIHk9IjE4NSIgd2lkdGg9IjExNiIgaGVpZ2h0PSIyMDUiIGZpbGw9InVybCgjbWdjUmVkKSIvPgogIDx0ZXh0IHg9IjMxMCIgeT0iNDM3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmIiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iMzUiIGZpbGw9IiNFMjAwMUEiPlNlcnZpY2VzICZhbXA7IFRlY2hub2xvZ2llczwvdGV4dD4KPC9zdmc+Cg==" alt="MGC Paris"></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#methode">Approach</a>
+      <a href="#equipe">Team</a>
+      <a href="#ia">AI</a>
+      <a href="#confidentialite">Confidentiality</a>
+      <a href="#realisations">Our Work</a>
+      <a href="#contact" class="btn btn-primary">Contact us</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="../MGC_page_principale.html" class="lang-link">FR</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Enable dark mode" aria-pressed="false" title="Dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <svg class="flag-wave" aria-hidden="true" viewBox="0 0 1200 600" preserveAspectRatio="none">
+    <defs>
+      <filter id="flagWaveFilter" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="turbulence" baseFrequency="0.003 0.018" numOctaves="1" seed="7" result="turb">
+          <animate attributeName="baseFrequency" dur="8s" values="0.003 0.018;0.005 0.014;0.003 0.018" repeatCount="indefinite"></animate>
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="turb" scale="65" xChannelSelector="R" yChannelSelector="G" result="displaced"></feDisplacementMap>
+        <feDiffuseLighting in="turb" surfaceScale="14" diffuseConstant="1.3" lighting-color="#ffffff" result="diffuse">
+          <feDistantLight azimuth="235" elevation="45">
+            <animate attributeName="azimuth" values="215;255;215" dur="8s" repeatCount="indefinite"></animate>
+          </feDistantLight>
+        </feDiffuseLighting>
+        <feComposite in="displaced" in2="diffuse" operator="arithmetic" k1="1" k2="0" k3="0" k4="0"></feComposite>
+      </filter>
+    </defs>
+    <g filter="url(#flagWaveFilter)">
+      <rect x="-240" y="-120" width="640" height="840" fill="var(--signal)"></rect>
+      <rect x="400" y="-120" width="400" height="840" fill="#F5F4EF"></rect>
+      <rect x="800" y="-120" width="640" height="840" fill="var(--brand-red)"></rect>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="hero-eyebrow"><span class="pulse"></span> MGC — Paris · Nice · Monaco</div>
+      <h1>Protecting what must never be exposed.</h1>
+      <p class="lead">MGC helps companies protect their systems, sites and data, with an integrated approach to cybersecurity and physical security.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Request an audit</a>
+        <a href="#services" class="btn btn-outline-dark">See our expertise</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Four areas of expertise, one standard of rigor.</h2>
+      <p class="section-sub">We work across the full security chain, from information systems to physical buildings.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Cybersecurity -->
+      <a class="service-card" href="cybersecurity.html">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 5 L40 11 V23 C40 33 33 39 24 43 C15 39 8 33 8 23 V11 Z"></path>
+            <circle cx="24" cy="22" r="4.5"></circle>
+            <path d="M24 26.5 V32"></path>
+          </svg>
+        </div>
+        <h3>Cybersecurity</h3>
+        <p>We audit, harden and monitor your information systems to reduce the attack surface and detect incidents before they become a crisis.</p>
+        <ul class="service-list">
+          <li>ANSSI-certified PASSI audit</li>
+          <li>24/7 managed SOC</li>
+          <li>Open-source intelligence (OSINT)</li>
+          <li>NIS2 &amp; GDPR compliance</li>
+        </ul>
+      </a>
+
+      <!-- Physical Security & Access Control -->
+      <a class="service-card" href="physical-security.html">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 5 L40 11 V23 C40 33 33 39 24 43 C15 39 8 33 8 23 V11 Z"></path>
+            <rect x="18" y="21" width="12" height="10" rx="1.2"></rect>
+            <path d="M20.5 21 V18 C20.5 16 22 14.5 24 14.5 C26 14.5 27.5 16 27.5 18 V21" stroke-width="1.4"></path>
+          </svg>
+        </div>
+        <h3>Physical Security &amp; Access Control</h3>
+        <p>We design, integrate and maintain physical access control systems and infrastructure protection.</p>
+        <ul class="service-list">
+          <li>Physical access control</li>
+          <li>Infrastructure protection</li>
+          <li>Security system integration</li>
+          <li>Preventive &amp; corrective maintenance</li>
+        </ul>
+      </a>
+
+      <!-- Video Protection -->
+      <a class="service-card" href="video-protection.html">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="16" width="22" height="16" rx="1"></rect>
+            <path d="M28 21 L40 16 V32 L28 27 Z"></path>
+            <circle cx="17" cy="24" r="5.5"></circle>
+            <circle cx="17" cy="24" r="1.4" fill="currentColor" stroke="none"></circle>
+            <path d="M11 16 V12 H23 V16" stroke-width="1.4"></path>
+          </svg>
+        </div>
+        <h3>Video Protection</h3>
+        <p>Video protection systems designed, integrated and maintained according to your regulatory and operational requirements, from a single site to a multi-site network.</p>
+        <ul class="service-list">
+          <li>High-definition IP cameras</li>
+          <li>Image analysis</li>
+          <li>Integration &amp; maintenance</li>
+          <li>Centralized monitoring</li>
+        </ul>
+      </a>
+
+      <!-- Sensitive Project Management -->
+      <a class="service-card" href="sensitive-projects.html">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 12 C8 10 9.5 9 11.5 9 H19 L22 12.5 H36.5 C38.5 12.5 40 14 40 16 V36 C40 38 38.5 39.5 36.5 39.5 H11.5 C9.5 39.5 8 38 8 36 Z"></path>
+            <rect x="19" y="20" width="10" height="12" rx="1.2"></rect>
+            <path d="M21.5 20 V17 C21.5 15.3 22.9 14 24.5 14 C26.1 14 27.5 15.3 27.5 17 V20" stroke-width="1.4"></path>
+          </svg>
+        </div>
+        <h3>Sensitive Project Management</h3>
+        <p>We manage your high-stakes projects with the rigor, discretion and traceability they require.</p>
+        <ul class="service-list">
+          <li>Cleared project managers</li>
+          <li>Team compartmentalization</li>
+          <li>Documented traceability</li>
+          <li>Business continuity</li>
+        </ul>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== APPROACH ===== -->
+<section class="section section-alt" id="methode">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>A proven method, for every project.</h2>
+      <p class="section-sub">Four steps to go from an identified need to an operational, maintained solution.</p>
+    </div>
+    <div class="method-list">
+      <div class="method-step">
+        <div class="step-num">01</div>
+        <h3>Audit &amp; risk analysis</h3>
+        <p>Mapping of infrastructure, workflows and vulnerabilities.</p>
+      </div>
+      <div class="method-step">
+        <div class="step-num">02</div>
+        <h3>Solution design</h3>
+        <p>Tailor-made architecture, sized according to your budgetary and regulatory constraints.</p>
+      </div>
+      <div class="method-step">
+        <div class="step-num">03</div>
+        <h3>Deployment &amp; integration</h3>
+        <p>Installation and integration of systems, minimizing the impact on your operations.</p>
+      </div>
+      <div class="method-step">
+        <div class="step-num">04</div>
+        <h3>Maintenance &amp; on-call support</h3>
+        <p>We provide follow-up, updates and technical on-call support to ensure continuity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GOVERNANCE & TEAM ===== -->
+<section class="section" id="equipe">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Governance led by experience.</h2>
+      <p class="section-sub">A team that combines strategic leadership, certified technical expertise (PASSI, ANSSI, ISO 27001) and regulatory advisory.</p>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-photo"><img id="imgTeamToso" src="../images/team-cristiano-toso.jpg" width="480" height="600" alt="Cristiano Toso" loading="lazy"></div>
+        <div class="team-info">
+          <span class="team-role">PRESIDENT</span>
+          <h3>Cristiano Toso</h3>
+          <p>President — MGC FR. Sets the group's long-term strategy and governance. Security expert, open-source intelligence and data-driven solutions.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img id="imgTeamBroc" src="../images/team-arthur-broc.jpg" width="480" height="600" alt="Arthur Broc" loading="lazy"></div>
+        <div class="team-info">
+          <span class="team-role">MANAGING DIRECTOR</span>
+          <h3>Arthur Broc</h3>
+          <p>Managing Director. Leads operational execution in France: ISO/PASSI certifications, projects and risk management. Over 20 years of experience, including leadership roles at Microsoft, Fujitsu and within the Thales ecosystem.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img id="imgTeamOueidat" src="../images/team-mounif-oueidat.jpg" width="480" height="600" alt="Mounif Oueidat" loading="lazy"></div>
+        <div class="team-info">
+          <span class="team-role">STRATEGIC COMMITTEE</span>
+          <h3>Mounif Oueidat</h3>
+          <p>Head of the Strategic Committee, in charge of operational execution abroad. Trilingual lawyer and engineer, specialized in international dispute resolution.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img id="imgTeamLethiec" src="../images/team-yves-lethiec.jpg" width="480" height="600" alt="Yves LeThiec" loading="lazy"></div>
+        <div class="team-info">
+          <span class="team-role">ADVISOR</span>
+          <h3>Yves LeThiec</h3>
+          <p>Advisor. Former Deputy Assistant Director at ANSSI, Télécom ParisTech engineer. Recognized expert in cyber defense and critical infrastructure security.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img id="imgTeamGoldenstein" src="../images/team-sophia-goldenstein.jpg" width="480" height="600" alt="Sophia Goldenstein" loading="lazy"></div>
+        <div class="team-info">
+          <span class="team-role">ADVISOR</span>
+          <h3>Sophia Goldenstein</h3>
+          <p>Advisor. Brings an independent perspective on governance, reputation management, crisis communication and international relations.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img id="imgTeamOufrani" src="../images/team-jean-yves-oufrani.jpg" width="480" height="600" alt="Jean Yves Oufrani" loading="lazy"></div>
+        <div class="team-info">
+          <span class="team-role">CISO — PASSI AUDITOR</span>
+          <h3>Jean Yves Oufrani</h3>
+          <p>CISO and PASSI auditor, ISO 27001 Lead Implementer &amp; Auditor. 25 years of experience in information systems security with critical organizations (OIV operators, banks, public sector).</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img id="imgTeamSimon" src="../images/team-fabrice-simon.jpg" width="480" height="480" alt="Fabrice Simon" loading="lazy"></div>
+        <div class="team-info">
+          <span class="team-role">CISO — PASSI AUDITOR</span>
+          <h3>Fabrice Simon</h3>
+          <p>CISO and PASSI auditor, ISO 27001 Lead Implementer. Leads organizational and physical audits as well as certification maintenance with ANSSI.</p>
+        </div>
+      </div>
+      <div class="team-card" aria-hidden="true"></div>
+    </div>
+
+    <div class="gov-footer">
+      <div class="gov-footer-block">
+        <div class="info-label">Legal structure</div>
+        <p>MGC FR — SAS with share capital of €5,000 — RCS Paris 104 930 565. Registered office: 69 Boulevard Haussmann, 75008 Paris.</p>
+      </div>
+      <div class="gov-footer-block">
+        <div class="info-label">References &amp; sectors</div>
+        <p>Monaco Digital Security Agency (AMSN), banks, hospitals, government audits and accreditations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ARTIFICIAL INTELLIGENCE ===== -->
+<section class="section" id="ia">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>AI, a tool that serves our teams.</h2>
+      <p class="section-sub">We integrate artificial intelligence into our systems to speed up detection — the decision always remains human.</p>
+    </div>
+    <ul class="guarantee-list">
+      <li>
+        <span class="mark">01</span>
+        <h4>License plate recognition</h4>
+        <p>Our cameras include automatic license plate recognition (ALPR) to control traffic and access on your sites.</p>
+      </li>
+      <li>
+        <span class="mark">02</span>
+        <h4>AI-powered image analysis</h4>
+        <p>Detection of events and anomalies in video feeds, reducing the time between an incident and the alert.</p>
+      </li>
+      <li>
+        <span class="mark">03</span>
+        <h4>Augmented monitoring</h4>
+        <p>Alerts generated by our AI tools are triaged and then verified by our teams before any decision is made.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== CONFIDENTIALITY / SENSITIVE PROJECTS ===== -->
+<section class="section confid" id="confidentialite">
+  <div class="confid-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="confid-head">
+      <h2>Confidentiality is not optional.</h2>
+      <p class="lead">On the most critical projects, we apply a strict framework, designed to protect information as much as people.</p>
+    </div>
+
+    <ul class="guarantee-list">
+      <li>
+        <span class="mark">01</span>
+        <h4>Systematic NDA</h4>
+        <p>Confidentiality agreement signed from the first exchanges.</p>
+      </li>
+      <li>
+        <span class="mark">02</span>
+        <h4>Cleared and vetted teams</h4>
+        <p>Only vetted, cleared personnel access sensitive project information.</p>
+      </li>
+      <li>
+        <span class="mark">03</span>
+        <h4>Strict information compartmentalization</h4>
+        <p>Limited access, separate documentation, logged communication.</p>
+      </li>
+      <li>
+        <span class="mark">04</span>
+        <h4>Sovereign hosting</h4>
+        <p>Sensitive data is hosted and processed on infrastructure located in France.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== OFFICES ===== -->
+<section class="offices-strip">
+  <div class="wrap">
+    <div class="offices-row">
+      <div class="office-chip">
+        <svg class="office-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22Z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+        <span class="office-city">Paris</span>
+        <span class="office-label">Headquarters</span>
+      </div>
+      <div class="office-chip accent-red">
+        <svg class="office-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22Z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+        <span class="office-city">Nice</span>
+        <span class="office-label">Office</span>
+      </div>
+      <div class="office-chip">
+        <svg class="office-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22Z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+        <span class="office-city">Monaco</span>
+        <span class="office-label">Office</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY / OUR WORK ===== -->
+<section class="section section-alt" id="realisations">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>In the field.</h2>
+      <p class="section-sub">A few visual highlights from our work.</p>
+    </div>
+    <div class="services-grid gallery-grid">
+      <div class="gallery-card">
+        <div class="img-slot">
+          <img id="imgReal1" src="../images/realisation-soc.jpg" width="500" height="359" alt="Photo — cybersecurity monitoring" loading="lazy">
+        </div>
+        <p class="gallery-caption">Monitoring center and SOC workstations.</p>
+      </div>
+      <div class="gallery-card">
+        <div class="img-slot">
+          <img id="imgReal2" src="../images/realisation-videoprotection.jpg" width="499" height="359" alt="Photo — video protection installation" loading="lazy">
+        </div>
+        <p class="gallery-caption">Installing a video protection system.</p>
+      </div>
+      <div class="gallery-card">
+        <div class="img-slot">
+          <img id="imgReal3" src="../images/realisation-projet-sensible.jpg" width="499" height="357" alt="Photo — sensitive project management" loading="lazy">
+        </div>
+        <p class="gallery-caption">Steering committee meeting for a sensitive project.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Let's talk about your project.</h2>
+      <p class="section-sub">Describe your needs, and we'll get back to you within 48 business hours.</p>
+    </div>
+
+    <div class="contact-grid">
+      <form id="contactForm" novalidate>
+        <input type="hidden" name="_subject" value="New request — MGC website (EN)">
+        <div class="field-row">
+          <div class="field">
+            <label for="nom">Name</label>
+            <input type="text" id="nom" name="nom" placeholder="John Smith" required>
+            <span class="field-error" id="err-nom"></span>
+          </div>
+          <div class="field">
+            <label for="societe">Company</label>
+            <input type="text" id="societe" name="societe" placeholder="Your organization's name">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            <span class="field-error" id="err-email"></span>
+          </div>
+          <div class="field">
+            <label for="tel">Phone</label>
+            <input type="tel" id="tel" name="tel" placeholder="+33 6 00 00 00 00">
+            <span class="field-error" id="err-tel"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="sujet">Subject</label>
+          <select id="sujet" name="sujet">
+            <option>Cybersecurity</option>
+            <option>Physical Security &amp; Access Control</option>
+            <option>Video Protection</option>
+            <option>Sensitive Project Management</option>
+            <option>Other request</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Describe your needs, context and timeline constraints…" required></textarea>
+          <span class="field-error" id="err-message"></span>
+        </div>
+        <button type="submit" id="contactSubmitBtn" class="btn btn-primary btn-full">Send request</button>
+        <p id="contactStatus"></p>
+      </form>
+
+      <div class="contact-info">
+        <div class="info-block">
+          <div class="info-label">Address</div>
+          <div class="info-value">MGC FR</div>
+          <div class="info-sub">69 Boulevard Haussmann, 75008 Paris</div>
+        </div>
+        <div class="info-block">
+          <div class="info-label">Phone</div>
+          <div class="info-value">+33 1 00 00 00 00</div>
+          <div class="info-sub">Monday – Friday, 9am – 7pm</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-badge"><img class="logo-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MjAgNTAzIiB3aWR0aD0iNjIwIiBoZWlnaHQ9IjUwMyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9Im1nY0JsdWUiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMkU2M0M5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTUlIiBzdG9wLWNvbG9yPSIjMTc0NkEyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBDMkE2MyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibWdjUmVkIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0ZGM0IzMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iI0QzMTQwRiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2RTA4MDYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDx0ZXh0IHg9IjMxMCIgeT0iMTUyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjEzMiIgbGV0dGVyLXNwYWNpbmc9IjIiIGZpbGw9IiNFMjAwMUEiPk1HQzwvdGV4dD4KICA8cmVjdCB4PSIxNDgiIHk9IjE4NSIgd2lkdGg9IjExNiIgaGVpZ2h0PSIyMDUiIGZpbGw9InVybCgjbWdjQmx1ZSkiLz4KICA8cmVjdCB4PSIzNTIiIHk9IjE4NSIgd2lkdGg9IjExNiIgaGVpZ2h0PSIyMDUiIGZpbGw9InVybCgjbWdjUmVkKSIvPgogIDx0ZXh0IHg9IjMxMCIgeT0iNDM3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmIiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iMzUiIGZpbGw9IiNFMjAwMUEiPlNlcnZpY2VzICZhbXA7IFRlY2hub2xvZ2llczwvdGV4dD4KPC9zdmc+Cg==" alt="MGC Paris"></span></div>
+        <p>Cybersecurity, video protection, physical security and sensitive project management. Based in Paris, Nice and Monaco.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Expertise</h5>
+        <ul>
+          <li><a href="cybersecurity.html">Cybersecurity</a></li>
+          <li><a href="physical-security.html">Physical Security</a></li>
+          <li><a href="video-protection.html">Video Protection</a></li>
+          <li><a href="sensitive-projects.html">Sensitive Projects</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#methode">Approach</a></li>
+          <li><a href="#equipe">Team</a></li>
+          <li><a href="#ia">Artificial intelligence</a></li>
+          <li><a href="#confidentialite">Confidentiality</a></li>
+          <li><a href="#realisations">Our Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="legal-notice.html">Legal Notice</a></li>
+          <li><a href="#" data-manage-cookies>Manage cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> MGC — All rights reserved.</span>
+      <span>Paris · Nice · Monaco</span>
+    </div>
+  </div>
+</footer>
+
+<div id="cookieBanner" role="region" aria-label="Cookie management">
+  <div class="wrap cookie-inner">
+    <p class="cookie-text">This site uses cookies essential to its operation. With your consent, it also uses analytics cookies to help us improve it. <a href="legal-notice.html#s3">Learn more</a>.</p>
+    <div class="cookie-actions">
+      <button type="button" class="cookie-btn" id="cookieReject">Reject</button>
+      <button type="button" class="cookie-btn" id="cookieCustomize">Customize</button>
+      <button type="button" class="cookie-btn cookie-btn-primary" id="cookieAccept">Accept all</button>
+    </div>
+  </div>
+</div>
+
+<div id="cookiePrefs" hidden>
+  <div class="cookie-modal" role="dialog" aria-modal="true" aria-labelledby="cookiePrefsTitle">
+    <button type="button" class="cookie-close" id="cookiePrefsClose" aria-label="Close">✕</button>
+    <h3 id="cookiePrefsTitle">Cookie preferences</h3>
+    <p>Choose which cookies you accept. You can change this choice at any time from the footer.</p>
+
+    <div class="cookie-row">
+      <div>
+        <div class="cookie-row-label">Essential cookies</div>
+        <div class="cookie-row-desc">Necessary for the site to function (navigation, security). Always active.</div>
+      </div>
+      <span class="cookie-switch">
+        <input type="checkbox" checked disabled>
+        <span class="track"></span>
+        <span class="thumb"></span>
+      </span>
+    </div>
+
+    <div class="cookie-row">
+      <div>
+        <div class="cookie-row-label">Analytics</div>
+        <div class="cookie-row-desc">Helps us understand site usage to improve it.</div>
+      </div>
+      <span class="cookie-switch">
+        <input type="checkbox" id="cookieAnalyticsToggle">
+        <span class="track"></span>
+        <span class="thumb"></span>
+      </span>
+    </div>
+
+    <div class="cookie-modal-actions">
+      <button type="button" class="cookie-btn" id="cookiePrefsReject">Reject all</button>
+      <button type="button" class="cookie-btn cookie-btn-primary" id="cookiePrefsSave">Save</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function(){
+    const CONSENT_KEY = 'mgc_cookie_consent';
+
+    function getConsent(){
+      try { return JSON.parse(localStorage.getItem(CONSENT_KEY)); } catch (err) { return null; }
+    }
+    function setConsent(analytics){
+      try {
+        localStorage.setItem(CONSENT_KEY, JSON.stringify({ essential: true, analytics: !!analytics, date: Date.now() }));
+      } catch (err) { /* storage unavailable: the choice will not be remembered */ }
+      document.dispatchEvent(new CustomEvent('mgc:consent-change', { detail: { analytics: !!analytics } }));
+    }
+    window.mgcConsent = { get: getConsent, set: setConsent };
+
+    const banner = document.getElementById('cookieBanner');
+    const prefs = document.getElementById('cookiePrefs');
+    const analyticsToggle = document.getElementById('cookieAnalyticsToggle');
+
+    function updateBannerOffset(){
+      if (banner.classList.contains('show')){
+        document.documentElement.style.setProperty('--cookie-banner-offset', (banner.offsetHeight + 14) + 'px');
+        document.body.classList.add('cookie-banner-visible');
+      } else {
+        document.body.classList.remove('cookie-banner-visible');
+        document.documentElement.style.removeProperty('--cookie-banner-offset');
+      }
+    }
+    function showBanner(){ banner.classList.add('show'); updateBannerOffset(); }
+    function hideBanner(){ banner.classList.remove('show'); updateBannerOffset(); }
+    function showPrefs(){
+      const c = getConsent();
+      analyticsToggle.checked = c ? !!c.analytics : false;
+      prefs.hidden = false;
+    }
+    function hidePrefs(){ prefs.hidden = true; }
+
+    window.addEventListener('resize', () => { if (banner.classList.contains('show')) updateBannerOffset(); });
+
+    if (!getConsent()){
+      setTimeout(showBanner, 500);
+    }
+
+    document.getElementById('cookieAccept').addEventListener('click', () => { setConsent(true); hideBanner(); });
+    document.getElementById('cookieReject').addEventListener('click', () => { setConsent(false); hideBanner(); });
+    document.getElementById('cookieCustomize').addEventListener('click', showPrefs);
+    document.getElementById('cookiePrefsClose').addEventListener('click', hidePrefs);
+    document.getElementById('cookiePrefsReject').addEventListener('click', () => { setConsent(false); hidePrefs(); hideBanner(); });
+    document.getElementById('cookiePrefsSave').addEventListener('click', () => { setConsent(analyticsToggle.checked); hidePrefs(); hideBanner(); });
+
+    document.querySelectorAll('[data-manage-cookies]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        showPrefs();
+      });
+    });
+  })();
+</script>
+
+
+
+<script>
+  // Light / dark mode toggle
+  (function(){
+    const themeToggle = document.getElementById('themeToggle');
+    function applyThemeToggleState(theme){
+      themeToggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      themeToggle.setAttribute('title', theme === 'dark' ? 'Light mode' : 'Dark mode');
+    }
+    applyThemeToggleState(document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
+    themeToggle.addEventListener('click', () => {
+      const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('mgc_theme', next); } catch (err) {}
+      applyThemeToggleState(next);
+    });
+  })();
+
+  // Mobile menu
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+
+  // Automatic year in the footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Contact form — sent via Formspree (https://formspree.io)
+  // The receiving address is configured in the Formspree dashboard, not here.
+  const FORMSPREE_ID = "meaqykno";
+  const contactForm = document.getElementById('contactForm');
+  const contactStatus = document.getElementById('contactStatus');
+  const contactBtn = document.getElementById('contactSubmitBtn');
+
+  // Anti-spam: the same email address can only resubmit the form
+  // 5 minutes after its previous submission (remembered in this browser).
+  const ANTI_SPAM_KEY = 'mgc_contact_last_submit';
+  const ANTI_SPAM_DELAY_MS = 5 * 60 * 1000;
+
+  function getContactAntiSpamWaitMs(email){
+    try {
+      const store = JSON.parse(localStorage.getItem(ANTI_SPAM_KEY) || '{}');
+      const last = store[email];
+      if (!last) return 0;
+      const elapsed = Date.now() - last;
+      return elapsed < ANTI_SPAM_DELAY_MS ? (ANTI_SPAM_DELAY_MS - elapsed) : 0;
+    } catch (err) {
+      return 0;
+    }
+  }
+
+  function recordContactSubmission(email){
+    try {
+      const store = JSON.parse(localStorage.getItem(ANTI_SPAM_KEY) || '{}');
+      store[email] = Date.now();
+      localStorage.setItem(ANTI_SPAM_KEY, JSON.stringify(store));
+    } catch (err) { /* storage unavailable: we simply let it through */ }
+  }
+
+  // Field validation
+  function setFieldError(fieldEl, errorEl, message){
+    fieldEl.closest('.field').classList.add('invalid');
+    if (errorEl) errorEl.textContent = message;
+  }
+  function clearFieldError(fieldEl, errorEl){
+    fieldEl.closest('.field').classList.remove('invalid');
+    if (errorEl) errorEl.textContent = '';
+  }
+
+  const nomEl = document.getElementById('nom');
+  const emailEl = document.getElementById('email');
+  const telEl = document.getElementById('tel');
+  const messageEl = document.getElementById('message');
+  const errNom = document.getElementById('err-nom');
+  const errEmail = document.getElementById('err-email');
+  const errTel = document.getElementById('err-tel');
+  const errMessage = document.getElementById('err-message');
+  const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const TEL_PATTERN = /^[0-9+()\s.-]{6,}$/;
+
+  function validateContactForm(){
+    let valid = true;
+
+    if (!nomEl.value.trim()){
+      setFieldError(nomEl, errNom, "Please enter your name.");
+      valid = false;
+    } else {
+      clearFieldError(nomEl, errNom);
+    }
+
+    if (!emailEl.value.trim()){
+      setFieldError(emailEl, errEmail, "Please enter your email.");
+      valid = false;
+    } else if (!EMAIL_PATTERN.test(emailEl.value.trim())){
+      setFieldError(emailEl, errEmail, "This email address is not valid.");
+      valid = false;
+    } else {
+      clearFieldError(emailEl, errEmail);
+    }
+
+    if (telEl.value.trim() && !TEL_PATTERN.test(telEl.value.trim())){
+      setFieldError(telEl, errTel, "This phone number is not valid.");
+      valid = false;
+    } else {
+      clearFieldError(telEl, errTel);
+    }
+
+    if (!messageEl.value.trim()){
+      setFieldError(messageEl, errMessage, "Please describe your needs.");
+      valid = false;
+    } else if (messageEl.value.trim().length < 10){
+      setFieldError(messageEl, errMessage, "Your message is too short (minimum 10 characters).");
+      valid = false;
+    } else {
+      clearFieldError(messageEl, errMessage);
+    }
+
+    return valid;
+  }
+
+  [nomEl, emailEl, telEl, messageEl].forEach(el => {
+    el.addEventListener('input', () => {
+      if (el.closest('.field').classList.contains('invalid')) validateContactForm();
+    });
+  });
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    if (FORMSPREE_ID === "FORMSPREE_ID") {
+      contactStatus.textContent = "Form not yet connected — Formspree ID needs to be set.";
+      contactStatus.style.color = "var(--signal)";
+      return;
+    }
+
+    if (!validateContactForm()) {
+      contactStatus.textContent = "Please correct the highlighted fields before sending your request.";
+      contactStatus.style.color = "var(--brand-red)";
+      return;
+    }
+
+    const emailValue = emailEl.value.trim().toLowerCase();
+    const antiSpamWait = getContactAntiSpamWaitMs(emailValue);
+    if (antiSpamWait > 0) {
+      const minutes = Math.ceil(antiSpamWait / 60000);
+      contactStatus.textContent = `A request has already been sent with this email address. Please try again in ${minutes} min.`;
+      contactStatus.style.color = "var(--brand-red)";
+      return;
+    }
+
+    contactBtn.disabled = true;
+    contactBtn.textContent = "Sending…";
+    contactStatus.textContent = "";
+
+    try {
+      const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: new FormData(contactForm)
+      });
+
+      if (response.ok) {
+        recordContactSubmission(emailValue);
+        contactForm.reset();
+        contactStatus.textContent = "Thank you, your request has been sent. We'll get back to you within 48 hours.";
+        contactStatus.style.color = "#6FA88A";
+      } else {
+        contactStatus.textContent = "Sending failed. Please try again or contact us directly by email.";
+        contactStatus.style.color = "var(--signal)";
+      }
+    } catch (err) {
+      contactStatus.textContent = "Sending failed. Please try again or contact us directly by email.";
+      contactStatus.style.color = "var(--signal)";
+    }
+
+    contactBtn.disabled = false;
+    contactBtn.textContent = "Send request";
+  });
+</script>
+
+
+
+<script>
+  // ===== DYNAMIC — reveal on scroll, progress bar, back to top =====
+  (function(){
+    const progressBar = document.createElement('div');
+    progressBar.className = 'progress-bar';
+    document.body.appendChild(progressBar);
+
+    const backToTop = document.createElement('button');
+    backToTop.className = 'back-to-top';
+    backToTop.setAttribute('aria-label', 'Back to top');
+    backToTop.textContent = '↑';
+    document.body.appendChild(backToTop);
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const headerEl = document.querySelector('header');
+    function onScroll(){
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - doc.clientHeight;
+      progressBar.style.width = (max > 0 ? (doc.scrollTop / max) * 100 : 0) + '%';
+      headerEl.classList.toggle('scrolled', doc.scrollTop > 10);
+      backToTop.classList.toggle('show', doc.scrollTop > 400);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    if ('IntersectionObserver' in window){
+      const revealTargets = document.querySelectorAll('.service-card, .method-step, .team-card, .guarantee-list li');
+      revealTargets.forEach(el => el.classList.add('reveal'));
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting){
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealTargets.forEach(el => revealObserver.observe(el));
+    }
+  })();
+</script>
+</body></html>

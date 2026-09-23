@@ -1,0 +1,5 @@
+# MODIFIER : remplacez l'URL du sitemap une fois le site publié sur son domaine définitif
+User-agent: *
+Allow: /
+
+Sitemap: https://www.mgc-paris.fr/sitemap.xml

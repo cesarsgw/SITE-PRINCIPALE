@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta charset="UTF-8">
+<script>
+(function(){
+  try {
+    var stored = localStorage.getItem('mgc_theme');
+    var theme = stored || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  } catch (e) {}
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions légales — MGC</title>
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="fr" href="https://www.mgc-paris.fr/mentions_legales.html">
+<link rel="alternate" hreflang="en" href="https://www.mgc-paris.fr/en/legal-notice.html">
+<link rel="alternate" hreflang="x-default" href="https://www.mgc-paris.fr/mentions_legales.html">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="256x256" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="subpage" id="page-legal">
+
+<header>
+  <svg class="flag-wave" aria-hidden="true" viewBox="0 0 1200 100" preserveAspectRatio="none">
+    <defs>
+      <filter id="flagWaveFilterHeader" x="-20%" y="-40%" width="140%" height="180%">
+        <feTurbulence type="turbulence" baseFrequency="0.003 0.05" numOctaves="1" seed="7" result="turb">
+          <animate attributeName="baseFrequency" dur="8s" values="0.003 0.05;0.005 0.04;0.003 0.05" repeatCount="indefinite"></animate>
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="turb" scale="14" xChannelSelector="R" yChannelSelector="G" result="displaced"></feDisplacementMap>
+        <feDiffuseLighting in="turb" surfaceScale="3" diffuseConstant="1.3" lighting-color="#ffffff" result="diffuse">
+          <feDistantLight azimuth="235" elevation="45">
+            <animate attributeName="azimuth" values="215;255;215" dur="8s" repeatCount="indefinite"></animate>
+          </feDistantLight>
+        </feDiffuseLighting>
+        <feComposite in="displaced" in2="diffuse" operator="arithmetic" k1="1" k2="0" k3="0" k4="0"></feComposite>
+      </filter>
+    </defs>
+    <g filter="url(#flagWaveFilterHeader)">
+      <rect x="-240" y="-40" width="640" height="180" fill="var(--signal)"></rect>
+      <rect x="400" y="-40" width="400" height="180" fill="#F5F4EF"></rect>
+      <rect x="800" y="-40" width="640" height="180" fill="var(--brand-red)"></rect>
+    </g>
+  </svg>
+  <div class="wrap">
+    <a href="MGC_page_principale.html" class="logo"><span class="logo-badge"><img class="logo-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MjAgNTAzIiB3aWR0aD0iNjIwIiBoZWlnaHQ9IjUwMyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9Im1nY0JsdWUiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMkU2M0M5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTUlIiBzdG9wLWNvbG9yPSIjMTc0NkEyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBDMkE2MyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibWdjUmVkIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0ZGM0IzMCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iI0QzMTQwRiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2RTA4MDYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDx0ZXh0IHg9IjMxMCIgeT0iMTUyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjEzMiIgbGV0dGVyLXNwYWNpbmc9IjIiIGZpbGw9IiNFMjAwMUEiPk1HQzwvdGV4dD4KICA8cmVjdCB4PSIxNDgiIHk9IjE4NSIgd2lkdGg9IjExNiIgaGVpZ2h0PSIyMDUiIGZpbGw9InVybCgjbWdjQmx1ZSkiLz4KICA8cmVjdCB4PSIzNTIiIHk9IjE4NSIgd2lkdGg9IjExNiIgaGVpZ2h0PSIyMDUiIGZpbGw9InVybCgjbWdjUmVkKSIvPgogIDx0ZXh0IHg9IjMxMCIgeT0iNDM3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmIiBmb250LXN0eWxlPSJpdGFsaWMiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iMzUiIGZpbGw9IiNFMjAwMUEiPlNlcnZpY2VzICZhbXA7IFRlY2hub2xvZ2llczwvdGV4dD4KPC9zdmc+Cg==" alt="MGC"></span></a>
+    <div class="header-actions">
+      <a href="en/legal-notice.html" class="lang-link">EN</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activer le mode sombre" aria-pressed="false" title="Mode sombre">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+      </button>
+      <a href="MGC_page_principale.html" class="back">← Page d'accueil</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Mentions légales</h1>
+  <div class="updated">Dernière mise à jour : 17 septembre 2026</div>
+
+  <h2 id="s1">1. Éditeur du site</h2>
+  <p>
+    Le présent site est édité par <strong>MGC FR</strong>, société par actions simplifiée (SAS) au
+    capital social de 5 000 €, immatriculée au Registre du Commerce et des Sociétés de Paris sous le
+    numéro SIREN 104 930 565 (RCS Paris).</p>
+  <p>
+    Siège social : c/o Flexo, 69 Boulevard Haussmann, 75008 Paris, France.</p>
+  <p>
+    Directeur de la publication : Cristiano Toso, Président de MGC FR</p>
+
+  <h2 id="s2">2. Propriété intellectuelle</h2>
+  <p>
+    Le site web ainsi que tous les éléments qui le composent, et notamment les textes, images fixes ou
+    animées, compositions sonores, charte graphique, logiciels et bases de données, sont la propriété
+    exclusive de MGC FR et sont protégés au titre des dispositions du Code de la Propriété
+    Intellectuelle.
+  </p>
+  <p>
+    En conséquence, toute reproduction ou représentation de ce site, en tout ou partie, ainsi que toute
+    extraction de la base de données par quelque moyen que ce soit, sans l'autorisation expresse de
+    MGC FR, est interdite. Le non-respect de ces dispositions constituerait une contrefaçon sanctionnée
+    selon les dispositions du Code de la Propriété Intellectuelle et du Code Pénal. Les marques, noms
+    commerciaux et logos figurant sur ce site sont déposés. Leur reproduction totale ou partielle, faite à
+    partir des éléments du site, est interdite.
+  </p>
+
+  <h2 id="s3">3. Données personnelles</h2>
+  <p>
+    MGC FR peut être amenée à traiter des données à caractère personnel vous concernant à des
+    fins d'administration, d'établissement de statistiques, de prospection commerciale ou de promotion.
+    Conformément au règlement (UE) 2016/679 (RGPD) et à la loi n° 78-17 du 6 janvier 1978 modifiée dite
+    « Loi Informatique et Libertés ».
+  </p>
+  <p>Ce site effectue les activités de traitement suivantes :</p>
+  <ul>
+    <li>Gestion des demandes d'informations effectuées via le formulaire de contact</li>
+    <li>Gestion des cookies</li>
+  </ul>
+  <p>
+    La gestion des demandes d'information traite les données suivantes : prénom, nom, entreprise, email,
+    numéro de téléphone. Ces données sont destinées aux équipes commerciales de MGC pour le traitement de
+    votre demande ; le formulaire est acheminé via le prestataire technique Formspree, qui agit en tant
+    que sous-traitant, sans autre transfert à des tiers.
+  </p>
+
+  <h2 id="s4">4. Responsabilité</h2>
+  <p>
+    MGC FR s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce
+    site, sans garantir qu'elles soient exemptes d'erreurs ou d'omissions. MGC FR ne pourra être
+    tenue responsable des dommages directs ou indirects résultant de l'accès ou de l'utilisation de ce
+    site.
+  </p>
+
+  <h2 id="s5">5. Liens hypertextes</h2>
+  <p>
+    Ce site peut contenir des liens vers des sites tiers. MGC FR n'exerce aucun contrôle sur ces
+    sites et n'assume aucune responsabilité quant à leur contenu.
+  </p>
+
+  <h2 id="s6">6. Droit applicable</h2>
+  <p>
+    Les présentes mentions légales sont soumises au droit français. En cas de litige, et à défaut de
+    résolution amiable, les tribunaux français seront seuls compétents.
+  </p>
+</main>
+
+<footer>
+  <div class="wrap">MGC FR — 69 Boulevard Haussmann, 75008 Paris · <a href="#" data-manage-cookies>Gérer les cookies</a></div>
+</footer>
+<div id="cookieBanner" role="region" aria-label="Gestion des cookies">
+  <div class="wrap cookie-inner">
+    <p class="cookie-text">Ce site utilise des cookies essentiels à son fonctionnement. Avec votre accord, il utilise aussi des cookies de mesure d'audience pour nous aider à l'améliorer. <a href="mentions_legales.html#s3">En savoir plus</a>.</p>
+    <div class="cookie-actions">
+      <button type="button" class="cookie-btn" id="cookieReject">Refuser</button>
+      <button type="button" class="cookie-btn" id="cookieCustomize">Personnaliser</button>
+      <button type="button" class="cookie-btn cookie-btn-primary" id="cookieAccept">Tout accepter</button>
+    </div>
+  </div>
+</div>
+
+<div id="cookiePrefs" hidden>
+  <div class="cookie-modal" role="dialog" aria-modal="true" aria-labelledby="cookiePrefsTitle">
+    <button type="button" class="cookie-close" id="cookiePrefsClose" aria-label="Fermer">✕</button>
+    <h3 id="cookiePrefsTitle">Préférences cookies</h3>
+    <p>Choisissez les cookies que vous acceptez. Vous pouvez modifier ce choix à tout moment depuis le pied de page.</p>
+
+    <div class="cookie-row">
+      <div>
+        <div class="cookie-row-label">Cookies essentiels</div>
+        <div class="cookie-row-desc">Nécessaires au fonctionnement du site (navigation, sécurité). Toujours actifs.</div>
+      </div>
+      <span class="cookie-switch">
+        <input type="checkbox" checked disabled>
+        <span class="track"></span>
+        <span class="thumb"></span>
+      </span>
+    </div>
+
+    <div class="cookie-row">
+      <div>
+        <div class="cookie-row-label">Mesure d'audience</div>
+        <div class="cookie-row-desc">Nous aide à comprendre l'utilisation du site pour l'améliorer.</div>
+      </div>
+      <span class="cookie-switch">
+        <input type="checkbox" id="cookieAnalyticsToggle">
+        <span class="track"></span>
+        <span class="thumb"></span>
+      </span>
+    </div>
+
+    <div class="cookie-modal-actions">
+      <button type="button" class="cookie-btn" id="cookiePrefsReject">Tout refuser</button>
+      <button type="button" class="cookie-btn cookie-btn-primary" id="cookiePrefsSave">Enregistrer</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function(){
+    const CONSENT_KEY = 'mgc_cookie_consent';
+
+    function getConsent(){
+      try { return JSON.parse(localStorage.getItem(CONSENT_KEY)); } catch (err) { return null; }
+    }
+    function setConsent(analytics){
+      try {
+        localStorage.setItem(CONSENT_KEY, JSON.stringify({ essential: true, analytics: !!analytics, date: Date.now() }));
+      } catch (err) { /* stockage indisponible : le choix ne sera pas mémorisé */ }
+      document.dispatchEvent(new CustomEvent('mgc:consent-change', { detail: { analytics: !!analytics } }));
+    }
+    window.mgcConsent = { get: getConsent, set: setConsent };
+
+    const banner = document.getElementById('cookieBanner');
+    const prefs = document.getElementById('cookiePrefs');
+    const analyticsToggle = document.getElementById('cookieAnalyticsToggle');
+
+    function updateBannerOffset(){
+      if (banner.classList.contains('show')){
+        document.documentElement.style.setProperty('--cookie-banner-offset', (banner.offsetHeight + 14) + 'px');
+        document.body.classList.add('cookie-banner-visible');
+      } else {
+        document.body.classList.remove('cookie-banner-visible');
+        document.documentElement.style.removeProperty('--cookie-banner-offset');
+      }
+    }
+    function showBanner(){ banner.classList.add('show'); updateBannerOffset(); }
+    function hideBanner(){ banner.classList.remove('show'); updateBannerOffset(); }
+    function showPrefs(){
+      const c = getConsent();
+      analyticsToggle.checked = c ? !!c.analytics : false;
+      prefs.hidden = false;
+    }
+    function hidePrefs(){ prefs.hidden = true; }
+
+    window.addEventListener('resize', () => { if (banner.classList.contains('show')) updateBannerOffset(); });
+
+    if (!getConsent()){
+      setTimeout(showBanner, 500);
+    }
+
+    document.getElementById('cookieAccept').addEventListener('click', () => { setConsent(true); hideBanner(); });
+    document.getElementById('cookieReject').addEventListener('click', () => { setConsent(false); hideBanner(); });
+    document.getElementById('cookieCustomize').addEventListener('click', showPrefs);
+    document.getElementById('cookiePrefsClose').addEventListener('click', hidePrefs);
+    document.getElementById('cookiePrefsReject').addEventListener('click', () => { setConsent(false); hidePrefs(); hideBanner(); });
+    document.getElementById('cookiePrefsSave').addEventListener('click', () => { setConsent(analyticsToggle.checked); hidePrefs(); hideBanner(); });
+
+    document.querySelectorAll('[data-manage-cookies]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        showPrefs();
+      });
+    });
+  })();
+</script>
+
+<script>
+  (function(){
+    // Bascule mode clair / sombre
+    const themeToggle = document.getElementById('themeToggle');
+    function applyThemeToggleState(theme){
+      themeToggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      themeToggle.setAttribute('title', theme === 'dark' ? 'Mode clair' : 'Mode sombre');
+    }
+    applyThemeToggleState(document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
+    themeToggle.addEventListener('click', () => {
+      const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('mgc_theme', next); } catch (err) {}
+      applyThemeToggleState(next);
+    });
+
+    // Barre de progression de lecture
+    const progressBar = document.createElement('div');
+    progressBar.className = 'progress-bar';
+    document.body.appendChild(progressBar);
+
+    // Bouton retour en haut
+    const backToTop = document.createElement('button');
+    backToTop.className = 'back-to-top';
+    backToTop.setAttribute('aria-label', 'Remonter en haut de page');
+    backToTop.textContent = '↑';
+    document.body.appendChild(backToTop);
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const headerEl = document.querySelector('header');
+    function onScroll(){
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - doc.clientHeight;
+      progressBar.style.width = (max > 0 ? (doc.scrollTop / max) * 100 : 0) + '%';
+      headerEl.classList.toggle('scrolled', doc.scrollTop > 10);
+      backToTop.classList.toggle('show', doc.scrollTop > 400);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Apparition au défilement des titres de sections
+    if ('IntersectionObserver' in window){
+      const revealTargets = document.querySelectorAll('main h2');
+      revealTargets.forEach(el => el.classList.add('reveal'));
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting){
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      revealTargets.forEach(el => revealObserver.observe(el));
+    }
+  })();
+</script>
+
+
+
+</body></html>
