@@ -213,7 +213,7 @@ html{ scroll-behavior: auto; }
   color: var(--white);
   position: relative;
   overflow: hidden;
-  padding: clamp(72px, 12vw, 140px) 0 clamp(56px, 8vw, 90px);
+  padding: clamp(72px, 12vw, 140px) 0 clamp(120px, 18vw, 220px);
 }
 #page-home .hero-grid{
   position: absolute;
