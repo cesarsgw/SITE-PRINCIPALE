@@ -35,20 +35,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.mgc-paris.fr/securite-physique.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.mgc-paris.fr/securite-physique.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.mgc-paris.fr/en/physical-security.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.mgc-paris.fr/en/physical-security.html</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.mgc-paris.fr/securite-physique.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.mgc-paris.fr/en/physical-security.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.mgc-paris.fr/videosurveillance.html</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.mgc-paris.fr/videosurveillance.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.mgc-paris.fr/en/video-protection.html"/>

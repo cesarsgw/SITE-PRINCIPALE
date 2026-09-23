@@ -280,12 +280,12 @@ html{ scroll-behavior: auto; }
 }
 #page-home .services-grid{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);
 }
-@media (max-width: 760px){
+@media (max-width: 900px){
 #page-home .services-grid{ grid-template-columns: 1fr; }
 }
 #page-home .service-card{
@@ -1267,13 +1267,13 @@ html{ scroll-behavior: auto; }
 }
 #page-404 .ql-grid{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-@media (max-width: 640px){ #page-404 .ql-grid{ grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px){ #page-404 .ql-grid{ grid-template-columns: 1fr; } }
 #page-404 .ql-grid a{
   display: block;
   border: 1px solid var(--line);
