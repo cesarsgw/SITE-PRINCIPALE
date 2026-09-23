@@ -230,7 +230,7 @@ html{ scroll-behavior: auto; }
   inset: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.15;
+  opacity: 0.45;
   pointer-events: none;
 }
 @media (prefers-reduced-motion: reduce){
@@ -243,7 +243,7 @@ html{ scroll-behavior: auto; }
 #page-home .hero-eyebrow{
   font-family: var(--font-mono);
   font-size: 13px;
-  color: var(--steel-soft);
+  color: rgba(245,244,239,0.8);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -266,8 +266,11 @@ html{ scroll-behavior: auto; }
 #page-home .hero p.lead{
   margin-top: 24px;
   font-size: clamp(16px, 1.6vw, 19px);
-  color: var(--steel-soft);
+  color: rgba(245,244,239,0.88);
   max-width: 52ch;
+}
+#page-home .hero h1, #page-home .hero p.lead, #page-home .hero-eyebrow{
+  text-shadow: 0 1px 14px rgba(10,18,32,0.55);
 }
 #page-home .hero-ctas{
   display: flex;
